@@ -1,0 +1,5 @@
+# Low Key Capital — all crawlers and AI agents are welcome.
+User-agent: *
+Allow: /
+
+Sitemap: https://lowkeyinc.com/sitemap.xml

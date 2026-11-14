@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Low Key Capital — Private Holding &amp; Venture Firm</title>
+<meta name="description" content="Low Key Capital is a private holding and venture firm. We partner early and for the long term with a small number of founders building technology that earns trust. Charleston, SC · Seattle, WA · San Francisco Bay.">
+<meta name="keywords" content="Low Key Capital, venture capital, boutique venture firm, private holding company, early-stage investing, seed investing, long-term capital, ethical technology, technology startups, founders, Charleston SC, Seattle WA, San Francisco Bay Area">
+<meta name="author" content="Low Key Capital LLC">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<!-- Site domain: lowkeyinc.com. It also appears in the JSON-LD below and in robots.txt, sitemap.xml and llms.txt -->
+
+<link rel="canonical" href="https://lowkeyinc.com/">
+<link rel="alternate" type="text/markdown" href="/llms.txt" title="Plain-text summary for AI agents">
+<meta name="theme-color" content="#070707">
+<meta name="color-scheme" content="dark">
+<meta property="og:site_name" content="Low Key Capital">
+<meta property="og:title" content="Low Key Capital — Private Holding &amp; Venture Firm">
+<meta property="og:description" content="Quiet capital for considered technology. Charleston, SC · Seattle, WA · San Francisco Bay.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lowkeyinc.com/">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Low Key Capital — Private Holding &amp; Venture Firm">
+<meta name="twitter:description" content="Quiet capital for considered technology. Charleston, SC · Seattle, WA · San Francisco Bay.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://lowkeyinc.com/#organization",
+      "name": "Low Key Capital",
+      "legalName": "Low Key Capital LLC",
+      "url": "https://lowkeyinc.com/",
+      "email": "email@lowkeyinc.com",
+      "slogan": "Quiet capital for considered technology.",
+      "description": "Low Key Capital is a private holding and venture firm. It partners early and for the long term with a small number of founders building technology that earns trust.",
+      "knowsAbout": [
+        "Venture capital",
+        "Early-stage investing",
+        "Holding companies",
+        "Ethical technology",
+        "Technology startups"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Inquiries",
+        "email": "email@lowkeyinc.com",
+        "availableLanguage": "English"
+      },
+      "location": [
+        {
+          "@type": "Place",
+          "name": "Charleston, SC",
+          "address": { "@type": "PostalAddress", "addressLocality": "Charleston", "addressRegion": "SC", "addressCountry": "US" },
+          "geo": { "@type": "GeoCoordinates", "latitude": 32.78, "longitude": -79.93 }
+        },
+        {
+          "@type": "Place",
+          "name": "Seattle, WA",
+          "address": { "@type": "PostalAddress", "addressLocality": "Seattle", "addressRegion": "WA", "addressCountry": "US" },
+          "geo": { "@type": "GeoCoordinates", "latitude": 47.61, "longitude": -122.33 }
+        },
+        {
+          "@type": "Place",
+          "name": "San Francisco Bay Area",
+          "address": { "@type": "PostalAddress", "addressLocality": "San Francisco", "addressRegion": "CA", "addressCountry": "US" },
+          "geo": { "@type": "GeoCoordinates", "latitude": 37.77, "longitude": -122.42 }
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://lowkeyinc.com/#website",
+      "url": "https://lowkeyinc.com/",
+      "name": "Low Key Capital",
+      "inLanguage": "en-US",
+      "publisher": { "@id": "https://lowkeyinc.com/#organization" }
+    }
+  ]
+}
+</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23070707'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23ece8df'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #070707;
+    --fg: #ece8df;
+    --dim: rgba(236, 232, 223, 0.52);
+    --rule: rgba(236, 232, 223, 0.11);
+    --serif: "Instrument Serif", "Iowan Old Style", "Times New Roman", serif;
+    --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+    --pad: clamp(24px, 5vw, 64px);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  /* background lives on <html> only: a background on <body> would cover the z-index:-1 canvas */
+  html { background: var(--bg); }
+  body { margin: 0; }
+
+  body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    padding: var(--pad);
+    padding-top: max(var(--pad), env(safe-area-inset-top));
+    padding-bottom: max(var(--pad), env(safe-area-inset-bottom));
+    color: var(--fg);
+    font-family: var(--mono);
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  #field {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 2.4s ease;
+  }
+  #field.on { opacity: 1; }
+
+  .label {
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 11px;
+  }
+
+  header { display: flex; justify-content: space-between; gap: 24px; }
+  header .dim, footer { color: var(--dim); }
+
+  main {
+    align-self: end;
+    max-width: 620px;
+    padding: 72px 0 clamp(40px, 7vh, 72px);
+  }
+
+  h1 {
+    margin: 0 0 clamp(22px, 3.5vh, 32px);
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(40px, 6.6vw, 76px);
+    line-height: 1.04;
+    letter-spacing: -0.012em;
+    text-wrap: balance;
+  }
+  h1 em { font-style: italic; color: var(--dim); }
+
+  .lede {
+    margin: 0 0 clamp(40px, 7vh, 64px);
+    max-width: 46ch;
+    color: var(--dim);
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+  .places {
+    list-style: none;
+    margin: 0;
+    padding: 18px 0 0;
+    border-top: 1px solid var(--rule);
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
+    gap: 14px 32px;
+  }
+  .places span { display: block; white-space: nowrap; }
+  .places .coord { margin-top: 5px; color: var(--dim); letter-spacing: 0.08em; }
+
+  .contact { margin: clamp(40px, 7vh, 64px) 0 0; display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: baseline; }
+  .contact .label { color: var(--dim); }
+  .contact a {
+    color: var(--fg);
+    text-decoration: none;
+    font-size: 13px;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 2px;
+    transition: border-color 0.25s ease;
+  }
+  .contact a:hover, .contact a:focus-visible { border-color: var(--fg); }
+
+  a:focus-visible { outline: 1px solid var(--dim); outline-offset: 4px; }
+
+  @media (max-width: 560px) {
+    .places { grid-template-columns: 1fr; gap: 0; padding-top: 0; }
+    .places li {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      padding: 13px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .places .coord { margin-top: 0; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #field, .contact a { transition: none; }
+  }
+</style>
+</head>
+<body>
+
+<canvas id="field" aria-hidden="true"></canvas>
+
+<header class="label">
+  <span>Low Key Capital</span>
+  <span class="dim">Holdings &amp; Ventures</span>
+</header>
+
+<main>
+  <h1>Quiet capital for <em>considered technology.</em></h1>
+
+  <p class="lede">A private holding and venture firm. We partner early and for the long term with a small number of founders building technology that earns trust.</p>
+
+  <ul class="places label">
+    <li><span>Charleston, SC</span><span class="coord">32.78° N, 79.93° W</span></li>
+    <li><span>Seattle, WA</span><span class="coord">47.61° N, 122.33° W</span></li>
+    <li><span>San Francisco Bay</span><span class="coord">37.77° N, 122.42° W</span></li>
+  </ul>
+
+  <p class="contact">
+    <span class="label">Inquiries</span>
+    <a href="mailto:email@lowkeyinc.com">email@lowkeyinc.com</a>
+  </p>
+</main>
+
+<footer class="label">© <span id="year">2026</span> Low Key Capital LLC</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* Background: a slow contour field in the dark, revealed by a single drifting
+   light that follows the pointer. Low-key lighting, literally. */
+(function () {
+  const canvas = document.getElementById('field');
+  const gl = canvas.getContext('webgl2', { antialias: false, alpha: false, powerPreference: 'low-power' });
+  if (!gl) return; // plain dark page is the fallback
+
+  const VERT = `#version 300 es
+in vec2 a;
+void main() { gl_Position = vec4(a, 0.0, 1.0); }`;
+
+  const FRAG = `#version 300 es
+precision highp float;
+uniform vec2 u_res;     // device px
+uniform float u_unit;   // device px per field unit
+uniform float u_dpr;
+uniform float u_time;
+uniform vec2 u_light;   // device px, origin bottom-left
+out vec4 o;
+
+// 3D simplex noise — Ian McEwan / Ashima Arts (MIT)
+vec4 permute(vec4 x) { return mod(((x * 34.0) + 1.0) * x, 289.0); }
+vec4 taylorInvSqrt(vec4 r) { return 1.79284291400159 - 0.85373472095314 * r; }
+float snoise(vec3 v) {
+  const vec2 C = vec2(1.0 / 6.0, 1.0 / 3.0);
+  const vec4 D = vec4(0.0, 0.5, 1.0, 2.0);
+  vec3 i = floor(v + dot(v, C.yyy));
+  vec3 x0 = v - i + dot(i, C.xxx);
+  vec3 g = step(x0.yzx, x0.xyz);
+  vec3 l = 1.0 - g;
+  vec3 i1 = min(g.xyz, l.zxy);
+  vec3 i2 = max(g.xyz, l.zxy);
+  vec3 x1 = x0 - i1 + C.xxx;
+  vec3 x2 = x0 - i2 + C.yyy;
+  vec3 x3 = x0 - D.yyy;
+  i = mod(i, 289.0);
+  vec4 p = permute(permute(permute(
+    i.z + vec4(0.0, i1.z, i2.z, 1.0)) +
+    i.y + vec4(0.0, i1.y, i2.y, 1.0)) +
+    i.x + vec4(0.0, i1.x, i2.x, 1.0));
+  float n_ = 1.0 / 7.0;
+  vec3 ns = n_ * D.wyz - D.xzx;
+  vec4 j = p - 49.0 * floor(p * ns.z * ns.z);
+  vec4 x_ = floor(j * ns.z);
+  vec4 y_ = floor(j - 7.0 * x_);
+  vec4 x = x_ * ns.x + ns.yyyy;
+  vec4 y = y_ * ns.x + ns.yyyy;
+  vec4 h = 1.0 - abs(x) - abs(y);
+  vec4 b0 = vec4(x.xy, y.xy);
+  vec4 b1 = vec4(x.zw, y.zw);
+  vec4 s0 = floor(b0) * 2.0 + 1.0;
+  vec4 s1 = floor(b1) * 2.0 + 1.0;
+  vec4 sh = -step(h, vec4(0.0));
+  vec4 a0 = b0.xzyw + s0.xzyw * sh.xxyy;
+  vec4 a1 = b1.xzyw + s1.xzyw * sh.zzww;
+  vec3 p0 = vec3(a0.xy, h.x);
+  vec3 p1 = vec3(a0.zw, h.y);
+  vec3 p2 = vec3(a1.xy, h.z);
+  vec3 p3 = vec3(a1.zw, h.w);
+  vec4 norm = taylorInvSqrt(vec4(dot(p0, p0), dot(p1, p1), dot(p2, p2), dot(p3, p3)));
+  p0 *= norm.x; p1 *= norm.y; p2 *= norm.z; p3 *= norm.w;
+  vec4 m = max(0.6 - vec4(dot(x0, x0), dot(x1, x1), dot(x2, x2), dot(x3, x3)), 0.0);
+  m = m * m;
+  return 42.0 * dot(m * m, vec4(dot(p0, x0), dot(p1, x1), dot(p2, x2), dot(p3, x3)));
+}
+
+float hash(vec2 p) {
+  vec3 p3 = fract(vec3(p.xyx) * 0.1031);
+  p3 += dot(p3, p3.yzx + 33.33);
+  return fract((p3.x + p3.y) * p3.z);
+}
+
+void main() {
+  vec2 p = gl_FragCoord.xy / u_unit;
+  float t = u_time * 0.022;
+
+  // height field, then iso-lines one pixel wide
+  float h = snoise(vec3(p * 1.05, t)) + 0.32 * snoise(vec3(p * 2.3 + 11.0, t * 1.7));
+  float v = h * 6.5;
+  float d = abs(fract(v - 0.5) - 0.5) / max(fwidth(v), 1e-5);
+  float line = 1.0 - smoothstep(0.0, 1.15 * u_dpr, d);
+
+  // one soft light
+  float r = distance(p, u_light / u_unit);
+  float fall = exp(-r * r * 3.4);
+
+  // kept barely above black: the map should be noticed, not seen
+  float lum = line * (0.014 + 0.07 * fall) + fall * 0.012;
+  vec3 col = vec3(0.0275) + vec3(0.925, 0.91, 0.875) * lum;
+  col += (hash(gl_FragCoord.xy + fract(u_time) * 61.0) - 0.5) * 0.012;
+  o = vec4(col, 1.0);
+}`;
+
+  function compile(type, src) {
+    const s = gl.createShader(type);
+    gl.shaderSource(s, src);
+    gl.compileShader(s);
+    return gl.getShaderParameter(s, gl.COMPILE_STATUS) ? s : null;
+  }
+  const vs = compile(gl.VERTEX_SHADER, VERT);
+  const fs = compile(gl.FRAGMENT_SHADER, FRAG);
+  if (!vs || !fs) return;
+  const prog = gl.createProgram();
+  gl.attachShader(prog, vs);
+  gl.attachShader(prog, fs);
+  gl.linkProgram(prog);
+  if (!gl.getProgramParameter(prog, gl.LINK_STATUS)) return;
+  gl.useProgram(prog);
+
+  gl.bindBuffer(gl.ARRAY_BUFFER, gl.createBuffer());
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 3, -1, -1, 3]), gl.STATIC_DRAW);
+  const loc = gl.getAttribLocation(prog, 'a');
+  gl.enableVertexAttribArray(loc);
+  gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
+
+  const U = {};
+  for (const n of ['u_res', 'u_unit', 'u_dpr', 'u_time', 'u_light']) U[n] = gl.getUniformLocation(prog, n);
+
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)');
+  let w = 0, h = 0, dpr = 1;
+  const light = { x: 0.68, y: 0.42 };        // 0..1, origin top-left
+  let pointer = null;                         // last pointer position, or null → drift
+  let raf = 0;
+  const seed = Math.random() * 600;           // a different landscape each visit
+
+  function resize() {
+    dpr = Math.min(window.devicePixelRatio || 1, 2);
+    w = Math.round(canvas.clientWidth * dpr);
+    h = Math.round(canvas.clientHeight * dpr);
+    if (canvas.width !== w || canvas.height !== h) {
+      canvas.width = w;
+      canvas.height = h;
+      gl.viewport(0, 0, w, h);
+    }
+  }
+
+  function draw(ms) {
+    const s = ms / 1000;
+    const tx = pointer ? pointer.x : 0.6 + 0.26 * Math.sin(s * 0.11);
+    const ty = pointer ? pointer.y : 0.45 + 0.24 * Math.sin(s * 0.073 + 1.3);
+    light.x += (tx - light.x) * 0.045;
+    light.y += (ty - light.y) * 0.045;
+
+    gl.uniform2f(U.u_res, w, h);
+    gl.uniform1f(U.u_unit, Math.sqrt(w * h));
+    gl.uniform1f(U.u_dpr, dpr);
+    gl.uniform1f(U.u_time, seed + s);
+    gl.uniform2f(U.u_light, light.x * w, (1 - light.y) * h);
+    gl.drawArrays(gl.TRIANGLES, 0, 3);
+  }
+
+  function frame(ms) {
+    draw(ms);
+    raf = requestAnimationFrame(frame);
+  }
+  function start() {
+    cancelAnimationFrame(raf);
+    if (reduce.matches || document.hidden) { draw(performance.now()); return; }
+    raf = requestAnimationFrame(frame);
+  }
+
+  addEventListener('resize', () => { resize(); if (reduce.matches) draw(performance.now()); });
+  addEventListener('pointermove', (e) => {
+    if (e.pointerType === 'touch') return;
+    pointer = { x: e.clientX / innerWidth, y: e.clientY / innerHeight };
+  }, { passive: true });
+  document.documentElement.addEventListener('pointerleave', () => { pointer = null; });
+  document.addEventListener('visibilitychange', start);
+  reduce.addEventListener('change', start);
+
+  resize();
+  start();
+  canvas.classList.add('on');
+})();
+</script>
+</body>
+</html>
